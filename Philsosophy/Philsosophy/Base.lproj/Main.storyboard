@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController title="Home" modalTransitionStyle="flipHorizontal" id="vXZ-lx-hvc" customClass="ViewController" customModule="Philsosophy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover960x340" translatesAutoresizingMaskIntoConstraints="NO" id="msa-kj-C4g">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Jsb-wB-GhV" appends="YES" id="iYZ-9w-2kk"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="msa-kj-C4g" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="1dY-ID-B2K"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="msa-kj-C4g" secondAttribute="bottom" id="3hQ-gc-boS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="msa-kj-C4g" secondAttribute="trailing" constant="-16" id="YHB-im-ju6"/>
+                            <constraint firstItem="msa-kj-C4g" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="b31-n4-3Iz"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Jsb-wB-GhV" appends="YES" id="tU5-1K-IPq"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="iSn-Va-Bii"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="Jsb-wB-GhV">
+                    <connections>
+                        <segue destination="U7r-Kv-prt" kind="show" id="SWa-8p-vbw"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-85" y="284"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="25q-zu-cHs">
+            <objects>
+                <viewController title="First" modalTransitionStyle="flipHorizontal" id="U7r-Kv-prt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f7I-y3-6Z2"/>
+                        <viewControllerLayoutGuide type="bottom" id="OEj-jb-LMC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bi2-88-rC7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vN2-vr-5hq">
+                                <rect key="frame" x="109" y="76" width="408" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Always look people in the eye. Even if they're blind.          
+
+         Just say, "I am looking you in the eye."                                 </string>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SL5-07-IHl" appends="YES" id="z73-jh-bDj"/>
+                            <outletCollection property="gestureRecognizers" destination="UrK-GU-l6B" appends="YES" id="Ih5-Uk-yE6"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="rp2-2s-Po3"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZx-lp-ioe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="SL5-07-IHl">
+                    <connections>
+                        <segue destination="xuG-hK-Qjt" kind="show" id="Pno-Ei-9Za"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="UrK-GU-l6B">
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="show" id="K6E-6t-Gq4"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="684" y="304"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="UCt-SF-rCe">
+            <objects>
+                <viewController title="Second" modalTransitionStyle="flipHorizontal" id="xuG-hK-Qjt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4bQ-HC-gt1"/>
+                        <viewControllerLayoutGuide type="bottom" id="tI1-MF-9Oj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wek-8c-gz8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="If you get pulled over for speeding, tell the policeman your spouse has diarrhea.        " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GeB-1o-pcm">
+                                <rect key="frame" x="96" y="89" width="408" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KhA-pf-FuA" appends="YES" id="Vre-su-x8I"/>
+                            <outletCollection property="gestureRecognizers" destination="3Nk-YC-5F9" appends="YES" id="5Sa-JJ-unH"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="P7q-hm-6Bk"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hF-uN-6pW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="KhA-pf-FuA">
+                    <connections>
+                        <segue destination="U7r-Kv-prt" kind="show" id="jbB-k0-epb"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="3Nk-YC-5F9">
+                    <connections>
+                        <segue destination="NgZ-1B-bGU" kind="show" id="Sl7-Aj-an2"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1416" y="304"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="mul-pN-tNU">
+            <objects>
+                <viewController title="Third" modalTransitionStyle="flipHorizontal" id="NgZ-1B-bGU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GA2-hT-8A6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lxc-HB-b9u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HVK-08-zPD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bJg-oW-MqW">
+                                <rect key="frame" x="90" y="89" width="380" height="84"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">You only get one chance at a first impression. I suggest Julia Child, because it's easy to do.        "Save the giblets!"                    </string>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="87z-Ie-8Mg" appends="YES" id="XeJ-z8-IX0"/>
+                            <outletCollection property="gestureRecognizers" destination="87z-Ie-8Mg" appends="YES" id="Y9G-Mf-15A"/>
+                            <outletCollection property="gestureRecognizers" destination="VxG-EG-aMv" appends="YES" id="7KY-Hx-Rms"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="COt-mz-1we"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MTd-Si-z6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="87z-Ie-8Mg">
+                    <connections>
+                        <segue destination="xuG-hK-Qjt" kind="show" id="qhV-oA-PRh"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="VxG-EG-aMv">
+                    <connections>
+                        <segue destination="07w-YB-8ax" kind="show" id="mu9-Kg-Tfb"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2192" y="304"/>
+        </scene>
+        <!--Fourth-->
+        <scene sceneID="ctI-Kt-chY">
+            <objects>
+                <viewController title="Fourth" modalTransitionStyle="flipHorizontal" id="07w-YB-8ax" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Iy-cq-K7k"/>
+                        <viewControllerLayoutGuide type="bottom" id="qSR-no-Nsq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XZf-fD-zUK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="74G-d7-QYq">
+                                <rect key="frame" x="90" y="89" width="380" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The most amazing things that can happen to a human being will happen to you, if you just lower your expectations.                               </string>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="I2P-Nr-1cP" appends="YES" id="dWl-TG-NM9"/>
+                            <outletCollection property="gestureRecognizers" destination="80M-I3-y34" appends="YES" id="K00-pq-19L"/>
+                            <outletCollection property="gestureRecognizers" destination="80M-I3-y34" appends="YES" id="CR3-hd-FNe"/>
+                            <outletCollection property="gestureRecognizers" destination="80M-I3-y34" appends="YES" id="6ci-Ng-YU4"/>
+                            <outletCollection property="gestureRecognizers" destination="80M-I3-y34" appends="YES" id="T4t-zM-ZzQ"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="vU4-x3-37B"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDc-k5-x6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="I2P-Nr-1cP">
+                    <connections>
+                        <segue destination="NgZ-1B-bGU" kind="show" id="aiM-Yp-ljj"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="80M-I3-y34">
+                    <connections>
+                        <segue destination="FhK-4U-6ir" kind="show" id="VHB-Az-K5K"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2900" y="304"/>
+        </scene>
+        <!--Fifth-->
+        <scene sceneID="m5c-fH-7FK">
+            <objects>
+                <viewController title="Fifth" modalTransitionStyle="flipHorizontal" id="FhK-4U-6ir" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bYi-H0-Gjz"/>
+                        <viewControllerLayoutGuide type="bottom" id="8xt-TF-YXF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lk9-Ts-Lig">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wfg-eu-dg5">
+                                <rect key="frame" x="90" y="89" width="380" height="106"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Dance, until your feet hurt.         
+Sing, until your lungs hurt.   
+Act, until you're William Hurt.                                       </string>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KRV-Be-TEV" appends="YES" id="uy5-tc-hUh"/>
+                            <outletCollection property="gestureRecognizers" destination="V31-Pt-rRp" appends="YES" id="Yjl-kR-neN"/>
+                            <outletCollection property="gestureRecognizers" destination="V31-Pt-rRp" appends="YES" id="hI2-nx-M7W"/>
+                            <outletCollection property="gestureRecognizers" destination="V31-Pt-rRp" appends="YES" id="xDg-7p-R11"/>
+                            <outletCollection property="gestureRecognizers" destination="V31-Pt-rRp" appends="YES" id="9Vr-nu-bzr"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="lon-8d-CQ6"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9f-Nr-xWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="KRV-Be-TEV">
+                    <connections>
+                        <segue destination="07w-YB-8ax" kind="show" id="rnm-r3-6kD"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="V31-Pt-rRp">
+                    <connections>
+                        <segue destination="Ytc-2j-zBz" kind="show" id="1nU-5b-nk5"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3604" y="304"/>
+        </scene>
+        <!--Sixth-->
+        <scene sceneID="Sk8-GQ-wyD">
+            <objects>
+                <viewController title="Sixth" modalTransitionStyle="flipHorizontal" id="Ytc-2j-zBz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FB8-rl-2AT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uoc-nG-Tbm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J81-ah-Hvl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ofa-8S-MPk">
+                                <rect key="frame" x="90" y="89" width="380" height="106"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Take a lesson from parakeets.
+If you’re ever lonely, just eat in front of a mirror.                                     </string>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Rcp-6F-QeH" appends="YES" id="5Sv-lU-eqJ"/>
+                            <outletCollection property="gestureRecognizers" destination="Xe7-yv-YVV" appends="YES" id="UK2-he-Rko"/>
+                            <outletCollection property="gestureRecognizers" destination="Xe7-yv-YVV" appends="YES" id="wtR-s1-SgG"/>
+                            <outletCollection property="gestureRecognizers" destination="Xe7-yv-YVV" appends="YES" id="iHt-iA-Zve"/>
+                            <outletCollection property="gestureRecognizers" destination="Xe7-yv-YVV" appends="YES" id="78h-gQ-tkW"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="5y2-zl-jak"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTG-9f-xGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Rcp-6F-QeH">
+                    <connections>
+                        <segue destination="FhK-4U-6ir" kind="show" id="FbK-4e-SYG"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Xe7-yv-YVV">
+                    <connections>
+                        <segue destination="YiC-Eg-72l" kind="show" id="RAD-Ym-XI9"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4304" y="304"/>
+        </scene>
+        <!--Seventh-->
+        <scene sceneID="spc-mx-cdI">
+            <objects>
+                <viewController title="Seventh" modalTransitionStyle="flipHorizontal" id="YiC-Eg-72l" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y7V-gK-quB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ool-J1-K2j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j5g-cj-7e4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gB9-Fg-qmS">
+                                <rect key="frame" x="90" y="89" width="380" height="122"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Never be afraid to reach for the stars, because even if you fall, you'll always be wearing a Parentchute™                          </string>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="bTR-pv-77M" appends="YES" id="QnI-aZ-wAF"/>
+                            <outletCollection property="gestureRecognizers" destination="ZgK-Us-dBW" appends="YES" id="ot3-Jb-Mng"/>
+                            <outletCollection property="gestureRecognizers" destination="ZgK-Us-dBW" appends="YES" id="KW2-IE-YNS"/>
+                            <outletCollection property="gestureRecognizers" destination="ZgK-Us-dBW" appends="YES" id="tlu-rt-M6G"/>
+                            <outletCollection property="gestureRecognizers" destination="ZgK-Us-dBW" appends="YES" id="7RG-pF-hDU"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="4HV-xA-nEp"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KbF-vU-5Ww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="bTR-pv-77M">
+                    <connections>
+                        <segue destination="Ytc-2j-zBz" kind="show" id="Dcl-cD-sCs"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="ZgK-Us-dBW">
+                    <connections>
+                        <segue destination="ieB-P7-ZYo" kind="show" id="un3-Ur-TpU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4980" y="304"/>
+        </scene>
+        <!--Eight-->
+        <scene sceneID="ABs-08-mqA">
+            <objects>
+                <viewController title="Eight" modalTransitionStyle="flipHorizontal" id="ieB-P7-ZYo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iQn-9M-FIU"/>
+                        <viewControllerLayoutGuide type="bottom" id="aGR-Mc-U0M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Spa-Ej-fJq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Marry someone who looks sexy while disappointed.                        " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3sS-WX-di1">
+                                <rect key="frame" x="90" y="89" width="380" height="122"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jX6-mn-5t3" appends="YES" id="3h8-XP-uSD"/>
+                            <outletCollection property="gestureRecognizers" destination="g09-IV-RqQ" appends="YES" id="lbo-nn-uTG"/>
+                            <outletCollection property="gestureRecognizers" destination="g09-IV-RqQ" appends="YES" id="RKL-iL-Px1"/>
+                            <outletCollection property="gestureRecognizers" destination="g09-IV-RqQ" appends="YES" id="uHd-ru-oqB"/>
+                            <outletCollection property="gestureRecognizers" destination="g09-IV-RqQ" appends="YES" id="xgg-r3-qjJ"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="tfW-vV-wmT"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrp-Qd-REo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="jX6-mn-5t3">
+                    <connections>
+                        <segue destination="YiC-Eg-72l" kind="show" id="3Vz-dp-peJ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="g09-IV-RqQ">
+                    <connections>
+                        <segue destination="umW-z7-xR5" kind="show" id="w31-pr-vzJ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="5664" y="304"/>
+        </scene>
+        <!--Nine-->
+        <scene sceneID="3cu-l5-JQH">
+            <objects>
+                <viewController title="Nine" modalTransitionStyle="flipHorizontal" id="umW-z7-xR5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x8B-i6-jwD"/>
+                        <viewControllerLayoutGuide type="bottom" id="XgU-Sc-fpU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KBa-MX-gI7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Older black ladies make the best iced tea.                      " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AB9-rk-t6i">
+                                <rect key="frame" x="90" y="89" width="380" height="122"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dqH-EQ-4kf" appends="YES" id="MLL-0z-Y9h"/>
+                            <outletCollection property="gestureRecognizers" destination="sWe-QC-zn5" appends="YES" id="m4D-e1-h56"/>
+                            <outletCollection property="gestureRecognizers" destination="sWe-QC-zn5" appends="YES" id="kSk-U8-WdI"/>
+                            <outletCollection property="gestureRecognizers" destination="sWe-QC-zn5" appends="YES" id="cyu-Tl-3ez"/>
+                            <outletCollection property="gestureRecognizers" destination="sWe-QC-zn5" appends="YES" id="9Ft-DW-wnw"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="w5b-t8-Srd"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7H-TC-jtJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="dqH-EQ-4kf">
+                    <connections>
+                        <segue destination="ieB-P7-ZYo" kind="show" id="CmI-CX-Lxf"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="sWe-QC-zn5">
+                    <connections>
+                        <segue destination="M6Z-Bn-ZeV" kind="show" id="9Ve-XW-Uvm"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="6373" y="304"/>
+        </scene>
+        <!--Ten-->
+        <scene sceneID="yhb-sh-aSE">
+            <objects>
+                <viewController title="Ten" modalTransitionStyle="flipHorizontal" id="M6Z-Bn-ZeV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XCd-LT-Z50"/>
+                        <viewControllerLayoutGuide type="bottom" id="MPO-Bh-69b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jga-Un-9y7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Success is 1% inspiration, 98% perspiration, and 2% attention to detail.                 " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3iC-Zb-PRk">
+                                <rect key="frame" x="90" y="89" width="380" height="122"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KxW-wg-Fy2" appends="YES" id="xQU-RG-bjI"/>
+                            <outletCollection property="gestureRecognizers" destination="xe4-KT-Who" appends="YES" id="Tlc-MW-c5x"/>
+                            <outletCollection property="gestureRecognizers" destination="xe4-KT-Who" appends="YES" id="WpF-zC-dDw"/>
+                            <outletCollection property="gestureRecognizers" destination="xe4-KT-Who" appends="YES" id="WRB-cN-6SM"/>
+                            <outletCollection property="gestureRecognizers" destination="xe4-KT-Who" appends="YES" id="R7q-0b-pEB"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="lrt-gU-tky"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="srp-Uf-1tS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="KxW-wg-Fy2">
+                    <connections>
+                        <segue destination="umW-z7-xR5" kind="show" id="zxA-4J-Tbn"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="xe4-KT-Who">
+                    <connections>
+                        <segue destination="3cx-yY-dJl" kind="show" id="lr0-fS-tOr"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="7034" y="304"/>
+        </scene>
+        <!--Eleven-->
+        <scene sceneID="hxH-xE-Grv">
+            <objects>
+                <viewController title="Eleven" modalTransitionStyle="flipHorizontal" id="3cx-yY-dJl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KXc-NK-j3R"/>
+                        <viewControllerLayoutGuide type="bottom" id="zf5-wm-ZcD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dR6-xg-a0m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="You can tell a lot about a person from his biography.               " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="52d-yq-GxI">
+                                <rect key="frame" x="90" y="89" width="380" height="122"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="zpE-5Q-Mqe" appends="YES" id="U5F-20-whe"/>
+                            <outletCollection property="gestureRecognizers" destination="xe7-S7-acr" appends="YES" id="ORX-u2-2On"/>
+                            <outletCollection property="gestureRecognizers" destination="xe7-S7-acr" appends="YES" id="3ro-ej-Rxt"/>
+                            <outletCollection property="gestureRecognizers" destination="xe7-S7-acr" appends="YES" id="oim-RJ-o4S"/>
+                            <outletCollection property="gestureRecognizers" destination="xe7-S7-acr" appends="YES" id="txY-hX-Ajl"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="jV4-Ox-xOo"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nch-Q6-kYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="zpE-5Q-Mqe">
+                    <connections>
+                        <segue destination="M6Z-Bn-ZeV" kind="show" id="L6H-p5-Dal"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="xe7-S7-acr">
+                    <connections>
+                        <segue destination="qJD-Jo-fnK" kind="show" id="hsf-7Z-csg"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="7721" y="304"/>
+        </scene>
+        <!--Twelve-->
+        <scene sceneID="3W6-yq-QV9">
+            <objects>
+                <viewController title="Twelve" modalTransitionStyle="flipHorizontal" id="qJD-Jo-fnK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bOD-xg-Qc2"/>
+                        <viewControllerLayoutGuide type="bottom" id="sWN-Rc-iED"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zJQ-VI-ExG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Watch a sunrise at least once a day." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UMR-MD-Oxp">
+                                <rect key="frame" x="90" y="89" width="380" height="122"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="P6f-NK-W1D" appends="YES" id="2zG-Xo-buK"/>
+                            <outletCollection property="gestureRecognizers" destination="wwa-cJ-fBd" appends="YES" id="zec-3E-yN9"/>
+                            <outletCollection property="gestureRecognizers" destination="wwa-cJ-fBd" appends="YES" id="MPH-tE-nZY"/>
+                            <outletCollection property="gestureRecognizers" destination="wwa-cJ-fBd" appends="YES" id="mSJ-5n-Yhg"/>
+                            <outletCollection property="gestureRecognizers" destination="wwa-cJ-fBd" appends="YES" id="VFH-b9-w6i"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ihz-e4-OQu"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AnB-Sd-Ul5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="P6f-NK-W1D">
+                    <connections>
+                        <segue destination="3cx-yY-dJl" kind="show" id="ds7-dl-Ep7"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="wwa-cJ-fBd">
+                    <connections>
+                        <segue destination="DiF-Do-meb" kind="show" id="XZ7-QM-i4U"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="8356" y="304"/>
+        </scene>
+        <!--Thirteen-->
+        <scene sceneID="CAH-ZA-GWZ">
+            <objects>
+                <viewController title="Thirteen" modalTransitionStyle="flipHorizontal" id="DiF-Do-meb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9RG-iM-Bo5"/>
+                        <viewControllerLayoutGuide type="bottom" id="BWo-CL-vKZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oF8-Eg-NyB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="If you love something, set it free. Unless it's a tiger.           " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7J5-7n-h6e">
+                                <rect key="frame" x="90" y="89" width="380" height="122"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WD1-cD-QKc" appends="YES" id="KdP-RK-s4a"/>
+                            <outletCollection property="gestureRecognizers" destination="Nel-us-TRq" appends="YES" id="Bqv-Pb-AtA"/>
+                            <outletCollection property="gestureRecognizers" destination="Nel-us-TRq" appends="YES" id="ud6-qp-HDW"/>
+                            <outletCollection property="gestureRecognizers" destination="Nel-us-TRq" appends="YES" id="qBs-eg-ubu"/>
+                            <outletCollection property="gestureRecognizers" destination="Nel-us-TRq" appends="YES" id="X2u-dL-mNW"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="gt5-ve-Qwh"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ML9-Cw-8eA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="WD1-cD-QKc">
+                    <connections>
+                        <segue destination="qJD-Jo-fnK" kind="showDetail" id="P7X-CW-KxP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Nel-us-TRq">
+                    <connections>
+                        <segue destination="X52-nt-WdK" kind="show" id="QHu-gc-ttc"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="9019" y="304"/>
+        </scene>
+        <!--Fourteen-->
+        <scene sceneID="4FS-B8-Iys">
+            <objects>
+                <viewController title="Fourteen" modalTransitionStyle="flipHorizontal" id="X52-nt-WdK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GJF-UT-rU5"/>
+                        <viewControllerLayoutGuide type="bottom" id="5u8-oK-1Cl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gQ2-L2-ksq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tvq-Sz-rm9">
+                                <rect key="frame" x="90" y="89" width="380" height="122"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">If you're ever in a jam, a crayon scrunched up under your nose makes a good pretend mustache.                                                </string>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gE3-x3-imp" appends="YES" id="nO7-Te-ziY"/>
+                            <outletCollection property="gestureRecognizers" destination="bmM-Fd-zI3" appends="YES" id="oWh-HL-L5J"/>
+                            <outletCollection property="gestureRecognizers" destination="bmM-Fd-zI3" appends="YES" id="9CC-IC-Rj2"/>
+                            <outletCollection property="gestureRecognizers" destination="bmM-Fd-zI3" appends="YES" id="vvL-fI-YNX"/>
+                            <outletCollection property="gestureRecognizers" destination="bmM-Fd-zI3" appends="YES" id="Wr5-WF-hWm"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eh0-zh-Ew6"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0RA-Kk-Wqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="gE3-x3-imp">
+                    <connections>
+                        <segue destination="DiF-Do-meb" kind="show" id="1Kf-nW-gp7"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="bmM-Fd-zI3">
+                    <connections>
+                        <segue destination="cOe-GU-wUf" kind="show" id="xNN-Qk-6ma"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="9694" y="304"/>
+        </scene>
+        <!--Fifteen-->
+        <scene sceneID="7X3-aU-FeT">
+            <objects>
+                <viewController title="Fifteen" modalTransitionStyle="flipHorizontal" id="cOe-GU-wUf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pfz-zN-t1h"/>
+                        <viewControllerLayoutGuide type="bottom" id="3cm-Sf-IDl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="udh-7r-Nqm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zlZ-cI-h7b">
+                                <rect key="frame" x="90" y="89" width="380" height="122"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">When life gives you lemonade, make lemons.
+Life will be all like “What?!”</string>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-8X-ScQ">
+                                <rect key="frame" x="257" y="219" width="46" height="30"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="CBs-Mb-AGU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XRR-5t-RaV" appends="YES" id="A2k-kY-18U"/>
+                            <outletCollection property="gestureRecognizers" destination="ErP-yb-enp" appends="YES" id="swS-5c-WxN"/>
+                            <outletCollection property="gestureRecognizers" destination="ErP-yb-enp" appends="YES" id="kbi-EL-gVj"/>
+                            <outletCollection property="gestureRecognizers" destination="ErP-yb-enp" appends="YES" id="OEz-FW-upB"/>
+                            <outletCollection property="gestureRecognizers" destination="ErP-yb-enp" appends="YES" id="dfM-PQ-OCK"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="TSw-bV-gJB"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vef-E5-yjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="XRR-5t-RaV">
+                    <connections>
+                        <segue destination="X52-nt-WdK" kind="show" id="3UU-Hx-7Y3"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="ErP-yb-enp"/>
+            </objects>
+            <point key="canvasLocation" x="10349" y="304"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cover960x340" width="480" height="320"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="CBs-Mb-AGU"/>
+        <segue reference="3UU-Hx-7Y3"/>
+        <segue reference="rnm-r3-6kD"/>
+        <segue reference="FbK-4e-SYG"/>
+        <segue reference="Dcl-cD-sCs"/>
+        <segue reference="3Vz-dp-peJ"/>
+        <segue reference="CmI-CX-Lxf"/>
+        <segue reference="zxA-4J-Tbn"/>
+        <segue reference="L6H-p5-Dal"/>
+        <segue reference="ds7-dl-Ep7"/>
+        <segue reference="P7X-CW-KxP"/>
+        <segue reference="1Kf-nW-gp7"/>
+        <segue reference="aiM-Yp-ljj"/>
+        <segue reference="qhV-oA-PRh"/>
+        <segue reference="jbB-k0-epb"/>
+    </inferredMetricsTieBreakers>
+</document>
